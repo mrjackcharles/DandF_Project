@@ -1,0 +1,227 @@
+html, body {
+  color: #3b3b3b;
+  background-color: #ffffff;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+div{
+  box-sizing: border-box; /* Include padding and border in the element's width */
+  width: 100%;
+}
+
+.form-titles {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.sub-heading {
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.side-nav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3b3b3b;
+  padding-top: 20px;
+}
+
+.side-nav a {
+  position: relative;
+  padding-left: 20px;
+  height: 24px;
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+  color: white;
+  display: block;
+  margin-top: 20px;
+}
+
+.side-nav a:hover {
+  background-color: #ff5757;
+  color: white;
+}
+
+.side-nav a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0; 
+  width: 4px;
+  height: 100%;
+  background-color: #ff5757;
+}
+
+.flex-container {
+  display: grid;
+}
+
+.roomdetails-container {
+  margin-left: 220px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.roomlist-container {
+  margin-left: 200px;
+  position: fixed;
+  padding: 20px;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 200px);
+}
+
+.create-button1 {
+  background-color: #ff5757;
+  margin: 20px;
+  border-radius: 0;
+  display: block;
+  margin-left: 0px;
+}
+
+.create-button1 a {
+  color: white;
+  font-family: "Karla", sans-serif;
+}
+
+.create-button2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ff5757;
+  margin: 20px;
+  border-radius: 0;
+}
+
+.create-button2 a {
+  color: white;
+  font-family: "Karla", sans-serif;
+}
+
+.back-link {
+  color:#ff5757;
+  font-family: "Marriweather", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.page-header {
+  margin: 0;
+  width: 512px;
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 2px;
+}
+
+.room-table {
+    border-collapse: collapse;
+    margin-top: 40px;
+    font-family: "Merriweather", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.room-table th, .room-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.room-table th {
+    font-weight: bold;
+}
+
+.room-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.room-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.input-box {
+  width: 629px;
+  height: 44px; 
+  padding: 20px;
+  font-size: 13px;
+  border: 1px solid #e5e7eb;
+  background-color: #e5e7eb;
+  color: #3b3b3b;
+  border-radius: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.dates-section {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 0px;
+  background-color: #bfb8b0;
+  font-family: "Karla", sans-serif;
+  width: 395px;
+  height: 153px;
+  right: 0;
+  position: fixed;
+  margin-right: 50px;
+}
+
+.dates-section h3 {
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dates {
+  font-family: "Merriweather", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.dates-table {
+  width: 100%;
+  border-collapse: separate; /* Use separate borders to allow spacing */
+  border-spacing: 10px; /* Add spacing between cells */
+}
+
+.dates-table th {
+  padding: 0px; /* Increase padding inside each cell */
+  text-align: left; /* Align text to the left */
+  font-family: "Karla", sans-serif;
+  font-size: 14px;
+}
+
+.dates-table td {
+  padding: 0px; /* Increase padding inside each cell */
+  text-align: left; /* Align text to the left */
+  font-size: 14px;
+}
+
+.clickable-row {
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.2s ease; /* Smooth background color transition */
+}
+
+.clickable-row:hover {
+  background-color: #e5e7eb; /* Highlight row on hover */
+}
